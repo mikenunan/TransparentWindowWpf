@@ -1,0 +1,24 @@
+﻿<Window x:Class="TransparentWindowWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TransparentWindowWpf"
+        mc:Ignorable="d"
+        AllowsTransparency="True" WindowStyle="None" MouseDown="MainWindow_OnMouseDown"
+        Title="Transparent Window" Height="450" Width="800">
+    <WindowChrome.WindowChrome>
+        <WindowChrome
+            CaptionHeight="1"
+            CornerRadius ="0"
+            ResizeBorderThickness="4"
+            GlassFrameThickness="4">
+        </WindowChrome>
+    </WindowChrome.WindowChrome>
+    <Window.Background>
+        <SolidColorBrush Opacity="0.002" Color="White"/>
+    </Window.Background>
+    <Grid>
+        <Border BorderThickness="4" BorderBrush="CornflowerBlue"/>
+    </Grid>
+</Window>

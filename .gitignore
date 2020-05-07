@@ -1,0 +1,26 @@
+# Build output
+*.obj
+*.exe
+*.pdb
+bin/
+obj/
+[D]ebug/
+[R]elease/
+
+# User settings
+*.user
+*.suo
+
+# NuGet
+packages/
+*.nupkg
+
+# Resharper
+_ReSharper*/
+[Tt]est[Rr]esult*
+
+# Windows
+Thumbs.db
+
+# Visual Studio
+/.vs/
